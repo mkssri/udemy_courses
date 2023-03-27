@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/mksriram/Documents/03_GIT/leetcode_fulltimes/learn_c_prog/c_prog_for_beg/murali-written",
+      "program": "/Users/mksriram/Documents/03_GIT/leetcode_fulltimes/learn_c_prog/c_prog_for_beg/murali-written/build/Debug/outDebug"
+    }
+  ]
+}
