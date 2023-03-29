@@ -43,7 +43,11 @@ int main(int argc, char* argv[]){
     // For " you write \".
     printf("For \" you write \\\".");
 
-    char x='m';
+    
+    int text1 = 'a';
+    char* text2 = "a"; // text2 will have address of a :)
+
+    printf("\ntext1: %c and text2: %c\n", text1, *text2);
     
     return 0;
 }

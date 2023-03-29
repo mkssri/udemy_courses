@@ -319,3 +319,46 @@ strncmp(a,b,5) // compares only first 5 characters.. :)
 - Always focus on fixing first problem detected.
 - The ability to debug by a programmer is an essential skill.
 - common problems: Logic Errors, Syntax Errors, Memory corruption, performance/scalability, Lack of cohesion(unity/togetherness), tight coupling(dependencies) 
+- Turn a large program in to small programs: unit testing :)
+- Semantic checker: Checks for Logic. not the syntax. :)
+
+text = 'a'; // text will have a
+text = "a"; // text will have pointer to a
+
+- scanf("%d", &num); //scanf will accept second argument as a pointer :) 
+
+/* Following is wrong */
+char* ptr;
+*ptr = 10; // wrong since first variable should be assigned to a memory location and then we can point to it :)
+
+- break should be present for every case statements else it will go to the next case statement :) lol.
+- don't insert ; at the end of preprocessor definition, if you do it preprocessor variable will get replaced w/ above in all lines of code.
+- [Important C lecture for understanding debugging](https://www.udemy.com/course/c-programming-for-beginners-/learn/lecture/8795392#search)
+
+##### Compiling
+- When compiling use option: -Wall : This is going to turn on everything. so you would get more inputs from compiler to you during compilation :)
+- compiler always helps :) :)
+- compiler show two types of problesm :) - erros and warnings.
+
+- most common compiler messages
+- variable undeclared. 
+- warning: implicit decleration of function '...'
+- warning: control reaches end of non-void function.
+- warning: confilcting time
+- runtime errors: when program is running, may be due to logic errors runtime erros are caused, may be out of bound error etc.
+- debug runtime errors: using call stack, core file or gdb.
+
+- Compiling works this way first preprocessor directives are processed and object files will be created after compiling the code then it combines w/ linker/dependencies
+- etc.(using option -l) and final object file is created.
+
+- gcc -g example.c -o example
+- gdb example
+- list 9: display 9 lines around the line where error was thrown.
+- In gdb console: you can do: print sum, print i etc...
+- quit: Exit from the gdb.
+- info source: That will tell you info about source file.
+- bt: is nothing but stack trace.
+- A core dump is generated when a program crashes or is terminated abnormally because of segementation fault.(possibly division by 0 or attempts to access past to end of an array).
+- segmentation fault comes when process tries access memory of other process like write to read only memory.
+- A core dump is also called memory dump, storage dump, or dump.
+- Type: ulimit -c unlimited => generates core/memory dumps.
