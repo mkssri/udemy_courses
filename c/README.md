@@ -362,3 +362,49 @@ char* ptr;
 - segmentation fault comes when process tries access memory of other process like write to read only memory.
 - A core dump is also called memory dump, storage dump, or dump.
 - Type: ulimit -c unlimited => generates core/memory dumps.
+
+#### Understanding typedef
+In C programming, typedef is a keyword used to create a new type alias. It allows you to define a new name for an existing data type. This can be useful for making your code more readable and maintainable.
+
+The syntax for typedef is as follows:
+
+- typedef existing_data_type new_type_name;
+Here, existing_data_type is the data type for which you want to create an alias, and new_type_name is the name you want to give to the new alias.
+
+For example, suppose you want to create a new type alias for int called myint. You can do this using typedef as follows:
+typedef int myint;
+myint x = 10;
+
+#defin x 10 
+it is way saying compiler something is constant, these are called preprocessor directives.
+
+typedef is like a alias :)
+#define Counter int; // this means where ever you come across Counter replace it with int
+
+- Use typedefs for types that combine arrays, structs, pointers or functions.
+- Use typedefs for portable types
+- Use typedefs for casting
+
+##### Function pointer
+```
+return_type (*pointer_name)(parameter_list);
+
+Explanation:
+Where return_type is the return type of the function, pointer_name is the name you choose for the function pointer variable, and parameter_list is the list of parameters that the function takes. For example, here's how you would declare a function pointer that points to a function that takes two integers as parameters and returns an integer:
+```
+
+
+```
+int (*my_func_ptr)(int, int);
+int my_function(int a, int b) {
+  return a + b;
+}
+
+int (*my_func_ptr)(int, int);  // Declare function pointer
+my_func_ptr = my_function;     // Assign function address to function pointer
+
+```
+variable length array just means you can initialize the array with dynamic value of 5,10,15,20 etc...during run time:)
+
+#### Flexible array numbers:
+- This feature is introduced in C99 standard of the C programming language.
