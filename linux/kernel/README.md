@@ -1,0 +1,4 @@
+- lsmod : will represent all installed modules in the kernel.
+- rmod : will represent all installed modules in the kernel.
+- dmesg: you can always check the status of kernel buffer by running dmesg.
+- strace: tells regarding all steps invovled while program running.

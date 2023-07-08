@@ -1,0 +1,155 @@
+<!--This tells the browser that this document uses html.-->
+<!DOCTYPE html>
+
+<!-- create an element, in every html page we need to add following element. -->
+<!--lang:- means language, for English: en, Portguese=pt, German=de -->
+<html lang="en">
+  <!--contains information that is not present in browser window, like title of page, link to css files etc. -->
+  <head>
+    <!-- metadata: It means data about the data -->
+    <meta charset="UTF-8" />
+    <title>The Basic Language of Web: HTML</title>
+  </head>
+
+  <!--contains information of all information that is present on browser window -->
+  
+  <!--
+  <body>
+    <h1>The basic language of web: HTML :)</h1>
+    <h2>The basic language of web: HTML :)</h2>
+    <h3>The basic language of web: HTML :)</h3>
+    <h4>The basic language of web: HTML :)</h4>
+    <h5>The basic language of web: HTML :)</h5>
+    <h6>The basic language of web: HTML :)</h6>
+  -->
+    <!-- header:- means top of something. -->
+    <header>
+      <!--It is very good practise to have only one h1 heading for a page-->
+      <h1>📘 The Code Magazine</h1>
+
+      <!-- nav :- means navigation container -->
+      <nav>
+        <!-- Hyperlink for the pages very nice -:) -->
+        <a href="blog.html">Blog</a>
+        <!--What really makes an anchor a link is really href property -->
+        <!--a>Challenges</a-->
+
+        <!--On adding href="#" makes the link not pointing anywhere-->
+        <!--It just takes us back to the top of the page.-->
+        <a href="#">Challenges</a>
+        <a href="#">Flexbox</a>
+        <a href="#">CSS Grid</a>
+      </nav>
+    </header>
+
+    <article>
+      <header>
+        <h2>The Basic Language of the Web: HTML</h2>
+
+        <img src="img/laura-jones.jpg" alt="Headshot of Laura Jones" width="50" height="50" />
+
+        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+
+        <!-- img is a special type of tag which does not have closing tag, but has src attribute -->
+        <!-- important arrtibutes: src:- source alt:- alternative text(some text what does image describe about) -->
+        <!-- incase if image is missing, on ui "alt" data is displayed -->
+        <!--width, and height specify number of pixels-->
+        <img src="img/post-img.jpg" alt="HTML code on a screen" width="500" height="200" />
+      </header>
+
+      <p>
+        All modern websites and web applications are built using three <em>fundamental</em>
+        technologies: HTML, CSS and JavaScript. These are the languages of the
+        web.
+      </p>
+
+      <p>
+        In this post, let's focus on HTML. We will learn what HTML is all about,
+        and why you too should learn it.
+      </p>
+
+      <h3>What is HTML?</h3>
+
+      <p>
+        HTML stands for <strong>H</strong>yperText <strong>M</strong>arkup <strong>L</strong>anguage. It's a markup language that web
+        developers use to structure and describe the content of a webpage (not a
+        programming language).
+      </p>
+
+      <p>
+        HTML consists of elements that describe different types of content:
+        paragraphs, links, headings, images, video, etc. Web browsers understand
+        HTML and render HTML code as websites.
+      </p>
+
+      <p>
+        In HTML, each element is made up of 3 parts:
+      </p>
+
+      <!-- ol: ordered list & li: list item -->
+      <ol>
+        <li>The opening tag</li>
+        <li>The closing tag</li>
+        <li>The actual element</li>
+      </ol>
+
+      <p>
+        You can learn more at
+      <!-- For hyperlink we can use something called anchor, "a" -->
+      <!--target="_blank" this allows for html to open the hyperlink in the new window -->
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" 
+        target="_blank" >MDN Web Docs</a
+        >.
+      </p>
+      
+      <h3>Why should you learn HTML?</h3>
+
+      <p>
+        There are countless reasons for learning the fundamental language of the web. Here are 5 of them:
+      </p>
+
+      <!--ul: unordered list-->
+      <ul>
+        <li>To be able to use the fundamental web dev language</li>
+        <li>To hand-craft beautiful websites instead of relying on tools like Worpress or Wix</li>
+        <li>To build web applications</li>
+        <li>To impress friends</li>
+        <li>To have fun 😃</li>
+      </ul>
+      
+      <p>
+        Hopefully you learned something new here. See you next time!
+      </p>
+    </article>
+
+    <!-- aside:- means side part, not main content -->
+    <aside>
+      <ul>
+        <li>
+          <img src="img/related-1.jpg" alt="Person programming" width="75" height="75" />
+          <a href="#"> How to Learn Web Development</a>
+          <p>By Jonas Schmedtmann</p>
+        </li>
+
+        <li>
+          <img src="img/related-2.jpg" alt="Lightning" width="75" height="75" />
+          <a href="#"> The Unknown Powers of CSS</a>
+          <p>By Jim Dillon</p>
+        </li>
+
+        <li>
+          <img src="img/related-3.jpg" alt="JavaScript code" width="75" height="75" />
+          <a href="#">Why JavaScript is Awesome</a>
+          <p>By Matilda</p>
+        </li>
+
+      </ul>
+    </aside>
+
+    <!-- footer will be present by default  and no tag: p is required for it. -->
+    <footer>
+      Copyright &copy; 2027 by The Code Magazine.
+    </footer>
+
+  </body>
+</html>
