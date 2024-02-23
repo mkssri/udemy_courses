@@ -1,6 +1,2 @@
-## Full times preperation:
-#### Daily checkin:  
-| Date | Lecture | Topic |
-| --- | ----------- | --------- |
-| Jan04, 2023 | | |
-| Jan05, 2023 | 134-141 | cls, obj, access specifiers, constructors and destructors |
+course1: [Beginning C++ Programming - From Beginner to Beyond](https://www.udemy.com/course/beginning-c-plus-plus-programming/)
+course2: [Learn C++ Programming - Beginner to Advance - Deep Dive in C++](https://www.udemy.com/course/cpp-deep-dive/learn/lecture/10392718#overview)
