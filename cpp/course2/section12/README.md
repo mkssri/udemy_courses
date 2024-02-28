@@ -35,3 +35,10 @@ inherit/borrow all features from parent.
 
 - class : it is a definition.
 - obhect: it is an instance. 
+
+# 163
+TV:
+  buttons means functions.
+
+Data as private.
+Functions as public.
