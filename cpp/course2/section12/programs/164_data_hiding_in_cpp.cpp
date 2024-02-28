@@ -11,21 +11,21 @@ class Rectangle
 
     public:
         void setLength ( int l ) {
-            if ( l>=0  ) {
+            if ( l>1  ) {
                 length = l;
             }
             else {
-                std::cout << "length cannot be negative" << std::endl;
-                length = 0;
+                std::cout << "length cannot be negative, so setting to default value" << std::endl;
+                length = 1;
             }
         }
         void setBreadth ( int b ) {
-            if ( b>=0 ) {
+            if ( b>1 ) {
                 breadth = b;
             }
             else {
-                std::cout << "breadth cannot be negative" << std::endl;
-                breadth = 0;
+                std::cout << "breadth cannot be negative, so setting to default value" << std::endl;
+                breadth = 1;
             }
         }
         int getLength () {
