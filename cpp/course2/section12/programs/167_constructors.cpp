@@ -29,7 +29,7 @@ class Rectangle
          Rectangle r(b=5);
          Rectangle r(  );
         */
-        Rectangle( int l=0, int b=0 ) {
+        Rectangle( int l=0, int b=0 ) { // constructors cannot have a RETURN TYPE!!!
             setLength(l);
             setBreadth(b);
         }
@@ -93,7 +93,7 @@ int main( )
     Rectangle r3(100,101);
 
     // COPY constructor
-    Rectangle r4 = r3;
+    Rectangle r4(r3); // or Rectangle r4 = r3;
     std::cout << "length: " << r4.getLength() << std::endl; 
     std::cout << "breadth: " << r4.getBreadth() << std::endl; 
 
