@@ -1,0 +1,2 @@
+1. Each object will consume memory for data members and member functions
+ans. False, object will consume memory one;y for data members. functions will be common for all the objects in memory.
