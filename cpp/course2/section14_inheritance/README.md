@@ -18,3 +18,32 @@
 
 - This is concept of inheritance: that means it is a procedure for borrowing existing features of a class
   in to the new class.
+
+# lecture 190: isA and hasA
+
+class Rectangle
+{
+
+};
+class Cuboid : public Rectangle
+{ // class Cuboid is inheriting from rectangle
+  // so, we can say CUBOID isA RECTANGLE
+};
+class Table
+{
+    // Table class is having an object of Rectangle class
+    // so we can say Table class hasA rectangle
+    Rectangle top;
+};
+
+- there are 2 ways a class can be used
+    - a class can be derived, meaning we can write child classes inheriting from parent.(isA relation)
+    - or object of that class can be used. (hasA relation)
+- a class can have 3 types of members
+    - private
+    - protected
+    - public
+- in above what is accessible in derived, current class, or class having the object of a class ???
+
+# lecture 191. Access Specifiers
+- public, private, protected
