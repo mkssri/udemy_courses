@@ -1,2 +1,2 @@
-course1: [Beginning C++ Programming - From Beginner to Beyond](https://www.udemy.com/course/beginning-c-plus-plus-programming/)
-course2: [Learn C++ Programming - Beginner to Advance - Deep Dive in C++](https://www.udemy.com/course/cpp-deep-dive/learn/lecture/10392718#overview)
+1. course1: [Beginning C++ Programming - From Beginner to Beyond](https://www.udemy.com/course/beginning-c-plus-plus-programming/)
+2. course2: [Learn C++ Programming - Beginner to Advance - Deep Dive in C++](https://www.udemy.com/course/cpp-deep-dive/learn/lecture/10392718#overview)
