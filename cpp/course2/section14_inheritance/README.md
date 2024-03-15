@@ -78,15 +78,15 @@ class Table
 ```
 - Multiple inheritance (it is only possible in c++, java does not allow this)
 ```
-             |===|
-             | C |
-         ----|===|
-         |   
-|===| <--|   |===|
-| A | <----- | B |
-|===|        |===|
+ |===|            
+ | C |            
+ |===|<-----|===|  
+            | A |     
+ |===|<-----|===| 
+ | B |    
+ |===|           
 ```      
-- Hirarcheal inheritance
+- multipath/hybrid inheritance
 ```
              |===|
              | C | <----|
