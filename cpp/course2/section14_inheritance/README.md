@@ -45,10 +45,10 @@ class Table
     - public
 - in above what is accessible in derived, current class, or class having the object of a class ???
 
-# lecture 191. Access Specifiers
+## lecture 191. Access Specifiers
 - public, private, protected
 
-# lecture 193. Types of inheritance
+## lecture 193. Types of inheritance
 
 - Simple or Single inheritance
 ```
