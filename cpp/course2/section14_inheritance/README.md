@@ -51,10 +51,11 @@ class Table
 # lecture 193. Types of inheritance
 
 - Simple or Single inheritance
+```
 |===|        |===|
 | A | <----- | B |
 |===|        |===|
-
+```
 - Hierarchial inheritance
              |===|
              | C |
