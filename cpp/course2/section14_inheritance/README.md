@@ -57,6 +57,7 @@ class Table
 |===|        |===|
 ```
 - Hierarchial inheritance
+```
              |===|
              | C |
          ----|===|
@@ -68,13 +69,15 @@ class Table
          ----|===|
              | D |
              |===|
-
+```
 - Multilevel inheritance
+```
 |===|        |===|      |===| 
 | A | <----- | B | <----| C |
 |===|        |===|      |===|
-
+```
 - Multiple inheritance (it is only possible in c++, java does not allow this)
+```
              |===|
              | C |
          ----|===|
@@ -82,8 +85,9 @@ class Table
 |===| <--|   |===|
 | A | <----- | B |
 |===|        |===|
-         
+```      
 - Hirarcheal inheritance
+```
              |===|
              | C | <----|
          ----|===|      |----|===|
@@ -91,14 +95,15 @@ class Table
 |===| <--|   |===|      |----|===|
 | A | <----- | B | <----|
 |===|        |===|
+```
+1. Here class D is getting features of A via B & C
+2. So, it is called multipath inheritance
+3. So, when you CALL a function in D(which is present in A), there will be two copies
+   one is coming from C and other is coming from B, so to remove this ambiguity 
+   we have a concept called VIRTUAL BASE CLASS
 
- Here class D is getting features of A via B & C
- So, it is called multipath inheritance
- So, when you CALL a function in D(which is present in A), there will be two copies
- one is coming from C and other is coming from B, so to remove this ambiguity 
- we have a concept called VIRTUAL BASE CLASS
-
-- In order to remove ambiguity, we can do following for above example
+4. In order to remove ambiguity, we can do following for above example
+```
 class A
 {
   --
@@ -120,3 +125,4 @@ class D : public B,public C
   --
 };
  through above we can remove ambiguity.
+```
