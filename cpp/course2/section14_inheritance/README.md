@@ -47,3 +47,75 @@ class Table
 
 # lecture 191. Access Specifiers
 - public, private, protected
+
+# lecture 193. Types of inheritance
+
+- Simple or Single inheritance
+|===|        |===|
+| A | <----- | B |
+|===|        |===|
+
+- Hierarchial inheritance
+             |===|
+             | C |
+         ----|===|
+         |   
+|===| <--|   |===|
+| A | <----- | B |
+|===| <--|   |===|
+         |
+         ----|===|
+             | D |
+             |===|
+
+- Multilevel inheritance
+|===|        |===|      |===| 
+| A | <----- | B | <----| C |
+|===|        |===|      |===|
+
+- Multiple inheritance (it is only possible in c++, java does not allow this)
+             |===|
+             | C |
+         ----|===|
+         |   
+|===| <--|   |===|
+| A | <----- | B |
+|===|        |===|
+         
+- Hirarcheal inheritance
+             |===|
+             | C | <----|
+         ----|===|      |----|===|
+         |                   | D |
+|===| <--|   |===|      |----|===|
+| A | <----- | B | <----|
+|===|        |===|
+
+ Here class D is getting features of A via B & C
+ So, it is called multipath inheritance
+ So, when you CALL a function in D(which is present in A), there will be two copies
+ one is coming from C and other is coming from B, so to remove this ambiguity 
+ we have a concept called VIRTUAL BASE CLASS
+
+- In order to remove ambiguity, we can do following for above example
+class A
+{
+  --
+  --
+};
+class B : virtual public A
+{
+  --
+  --
+};
+class C : virtual public A
+{
+  --
+  --
+};
+class D : public B,public C
+{
+  --
+  --
+};
+ through above we can remove ambiguity.

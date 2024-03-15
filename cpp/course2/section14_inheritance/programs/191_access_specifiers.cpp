@@ -41,6 +41,7 @@ public:
 
 int main()
 {
+    // hasA relationship, you can access only public members of class
     Base x;
 
     
@@ -52,3 +53,34 @@ int main()
     cout << "x.c: " << x.c << endl;
     return 1;
 }
+/*
+ * inside class: all type datamember's (public, private, & protected) are accessible.
+ * in derived class: only protected and public data members of BASE class are accessible.
+ * upon object: only public class is accessible.
+ * 
+ *
+ *     ==========        ==========          ==========
+ *     | MY CAR |        | YOUR   |          |        |   
+ *     |        |        |    CAR |          | OBJECT |
+ *     |        |        |        |          |        |
+ *     ==========        ==========          ==========
+ *
+ *accessible:              
+        public            public               public
+        private           protected
+        protected
+ *
+ *
+ *
+ *         # access specifier's table
+ *
+ *                                        public          protected           private
+ *
+ *         inside class                     YES              YES                YES
+ *         
+ *         inside derived class             YES              YES                 NO
+ *
+ *         on object                        YES              NO                  NO
+ *
+ *
+ */
